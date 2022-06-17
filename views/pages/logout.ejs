@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("../partials/head") %>
+</head>
+
+<body class="bg-dark container">
+
+    <div class="row">
+        <div class="mt-5 text-center">
+            <p class="display-5 fw-bold bg-dark text-white">Has cerrado sesión, <%= nameUser.charAt(0).toUpperCase() + nameUser.slice(1).toLowerCase() %>
+            </p>
+        </div>
+    </div>
+    <script>
+        setTimeout(() => {
+            location.href = '/'
+        }, 2000)
+    </script>
+</body>
+
+</html>

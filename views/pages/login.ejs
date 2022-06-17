@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("../partials/head") %>
+</head>
+
+<body class="bg-dark ">
+    <div class="card card-5 container mt-5 mb-4">
+        <div class="card-heading text-center">
+            <h2>Login</h2>
+            <div class="card-body">
+                <form class="form-inline " action="/login" method="post" autocomplete="off">
+                    <div>
+                        <label for="username">Ingresa tu usuario</label>
+                        <input id="username" class="form-control" type="text" name="username" required>
+                        <label for="password">Ingresa tu contraseña</label>
+                        <input id="password" class="form-control" type="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-info rounded-pill mt-4"">Login</button>
+                    <button type="submit" class="btn rounded-pill btn-info mt-4"><a class="text-dark text-decoration-none" href="/">Registrarse</a></button></div>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>
